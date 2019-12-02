@@ -1,0 +1,337 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Bitter&display=swap');
+@font-face {
+	font-family: "dienasty";
+	font-style: normal;
+	font-weight: normal;
+	src: local('dienasty'), url('../fonts/dienasty.ttf') format('truetype');
+}
+
+body{
+	margin: 0;
+	height: 100vh;
+	background-image: url('../img/bg.jpg');
+	background-repeat: no-repeat; 
+	background-size: cover;
+	background-color: black;
+	background-attachment: fixed;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	font-family: 'dienasty';
+	color: white;
+}
+body h1{
+	font-family: 'dienasty';
+}
+header{
+	box-shadow: 0px 0px 10px rgb(124, 124, 124);
+	display: flex;
+	justify-content: space-around;
+	border-radius: 100px;
+	margin-top: 10px;
+}
+header img{
+	width: 150px;
+	height: 100px;
+}
+#logo{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	font-size: 30px;
+    font-weight: bold;
+}
+#logo img{
+	width: 150px;
+	height: 150px;
+}
+#logo a{
+	color: black;
+	text-decoration: none;
+}
+#logo:hover{
+	opacity: 0.3;
+}
+.nav{
+	display: flex;
+    justify-content: space-around;
+    align-items: center;
+	width: 100%;
+	border-radius: 100px;
+	background-color: rgba(255,255,255,0.6);
+}
+.nav img {
+	width: 60px;
+	height: 60px;
+}
+.nav a {
+	color: white;
+	text-shadow: #000000 1px 1px, #000000 -1px 1px, #000000 -1px -1px, #000000 1px -1px;
+	text-decoration: none;
+}
+.nav a span {
+	color: rgb(233, 0, 0);
+}
+.undernav{
+	display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'dienasty';
+    font-weight: bold;
+}
+.undernav:hover{
+	opacity: 0.3;
+}
+.submit1{ 
+	border:none;
+	background:transparent url('../img/icon.png');
+	background-size: cover;
+	background-repeat:no-repeat;
+    width: 60px; 
+	height: 60px;
+	font-size: 0px;
+    color: transparent;
+	cursor: pointer;
+}
+main{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-grow:1;
+	background-color: rgba(255,255,255,0.6);
+	margin: 75px;
+	border-radius: 20px;
+	color: black;
+	box-shadow: 0px 0px 5px rgb(124, 124, 124);
+}
+.corpsmain{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	font-family: 'Bitter', serif;
+	font-size: 25px;
+	padding:20px;
+}
+.corpsmain a{
+	font-family: 'dienasty';
+	font-size: 30px;
+    color: black;
+    text-decoration: none;
+}
+.corpsmain a:hover{
+	opacity: 0.3;
+}
+.gifmain img{
+     height: 350px;
+     width: 300px;
+}
+.navfooter{
+	display: flex;
+    justify-content: space-between;
+    align-items: center;
+	width: 600px;
+    font-family: 'dienasty';
+}
+.navfooter a{
+	color: white;
+	text-shadow: #000000 1px 1px, #000000 -1px 1px, #000000 -1px -1px, #000000 1px -1px;
+	text-decoration: none;
+}
+.navfooter a:hover{
+	color: white;
+}
+.navfooter a span{
+	color: red;
+}
+footer{
+	box-shadow: 0px 0px 5px rgb(124, 124, 124);
+	width: 100%;
+	height: 50px;
+	display: flex;
+	justify-content: space-around;
+	color: black;
+	font-family: 'roboto', sans-serif;
+	background-color: rgba(255,255,255,0.6);
+}
+.full{
+	background:transparent url('../img/full.gif');
+	background-size:100% 100%;
+	display: flex;
+	align-items: center;
+	font-size: 50px;
+}
+.form_site{
+	display:flex;
+	flex-direction:column;
+	text-align: center;
+	font-family: "dienasty";
+    font-size: 20px;
+    width: 300px;
+    margin: 0;
+    border-radius: 50px;
+    padding: 15px;
+}
+.form_site input{
+	border-radius:8px;
+	padding:10px 20px;
+	margin-top: 10px;
+}
+.form_site input:focus {
+	outline:none;
+}
+.form_site input:hover{
+	background: white;
+	text-shadow: 0 1px 2px rgba(0,0,0,0.75), 0 0 40px #FFF;
+	box-shadow:
+		inset 1px 1px 0px rgba(255,255,255,0.25), 
+		inset 0 0 6px gold, /* inner glow */
+		inset 0 80px 80px -40px black, /* gradient */
+		1px 1px 3px rgba(0,0,0,0.75); /* shadow */
+	color : white;
+  }
+
+.form_site textarea{
+	border-radius:8px;
+	padding:10px 20px;
+	margin-top: 10px;
+}
+.form_site textarea:focus {
+	outline:none;
+}
+.form_site textarea:hover{
+	background: white;
+	text-shadow: 0 1px 2px rgba(0,0,0,0.75), 0 0 40px #FFF;
+	box-shadow:
+		inset 1px 1px 0px rgba(255,255,255,0.25), 
+		inset 0 0 6px gold, /* inner glow */
+		inset 0 80px 80px -40px black, /* gradient */
+		1px 1px 3px rgba(0,0,0,0.75); /* shadow */
+	color : white;
+  }
+ 	
+#likev {
+     font-size: 0;
+     width: 24px;
+     height: 24px;
+     border: none;
+     margin: 0;
+    padding: 0;
+    background: transparent;
+    background-image: url(../img/likev.png);
+    opacity: 1;
+}
+
+#likev:hover {
+    background-image: url(../img/likev.png);
+    opacity: 0.7;
+}
+
+#dislikev {
+     font-size: 0;
+     width: 24px;
+     height: 24px;
+     border: none;
+     margin: 0;
+    padding: 0;
+    background: transparent;
+    background-image: url(../img/dislikev.png); 
+}
+
+#dislikev:hover {
+    background-image: url(../img/dislikev.png);
+    opacity: 0.7;
+}
+
+#like {
+     font-size: 0;
+     width: 24px;
+     height: 24px;
+     border: none;
+     margin: 0;
+    padding: 0;
+    background: transparent;
+    background-image: url(../img/like.png);
+    opacity: 1;
+}
+
+#like:hover {
+    background-image: url(../img/like.png);
+    opacity: 0.7;
+}
+
+#dislike {
+     font-size: 0;
+     width: 24px;
+     height: 24px;
+     border: none;
+     margin: 0;
+    padding: 0;
+    background: transparent;
+    background-image: url(../img/dislike.png); 
+}
+
+#dislike:hover {
+    background-image: url(../img/dislike.png);
+    opacity: 0.7;
+}
+
+.resultatvotes {
+    line-height: 24px;
+}
+
+#formvote {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	width: 100px;
+	margin-top: 10px;
+}
+
+.submit2 { 
+    text-align: center;
+	display: inline-block;
+	margin:5px;
+    font-weight: bold;
+    padding: 10px 0 10px 10px ;
+    background-color: lightgray;
+    text-shadow: -1px -1px black, 1px 1px white;
+    color: gray;
+    -webkit-border-radius: 7px;
+	-moz-border-radius: 7px;
+	-o-border-radius: 7px;
+	border-radius: 7px;
+    box-shadow: 0 4px gray;
+	cursor: pointer;
+	font-size: 0px;
+	width: 100px;
+	height: 30px;
+	background-image: url(../img/deletebtn.png);
+	outline: none;
+}
+
+.submit2:active {
+	box-shadow: none;
+	position: relative;
+	top: .2em;
+}
+
+.cmessages {
+	margin-top: 30px;
+	margin-bottom: 30px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.cmessages article {
+	text-align: center;
+}
+
+.h1topic {
+	text-align: center;
+}
